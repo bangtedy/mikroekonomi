@@ -1,0 +1,99 @@
+---
+title: "Mikroekonomi"
+subtitle: "Kontrak Perkuliahan"
+author: "Tedy Herlambang"
+institute: "Prodi Agribisnis, UPM"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "extra_css.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    includes:
+      in_header: header.html
+      after_body: insert-logo.html
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(knitr)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+# options(knitr.table.format = "html")
+library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+layout: true
+  
+<div class="my-footer"><span>bangtedy.github.io</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+---
+
+## Tujuan Pembelajaran:
+Setelah mengikuti matakuliah ini, mahasiswa diharapkan mampu menggunakan mikroekonomi sebagai suatu seni dan sains dalam menganalisis persoalan-persoalan ekonomi.
+
+## Strategi Perkuliahan
+
+- Perkuliahan dilakukan sebanyak 14 kali pertemuan dan 2 kali pertemuan untuk UTS dan UAS. 
+- Metode perkuliahan adalah ramuan antara ceramah, diskusi, responsi/latihan dan presentasi kelompok. 
+- Mahasiswa wajib mengikuti perkuliahan minimal 80 persen.
+
+---
+
+## Kriteria Penilaian
+
+Nilai Akhir (**NA**) adalah nilai kumulatif dari nilai ujian tengah semester (UTS), ujian akhir semester (**UAS**) dan nilai **LL** (tugas individu, kelompok, kehadiran) dengan proporsi sebagai berikut:
+
+1.	UTS dan UAS dilakukan melalui ujian tertulis dengan bobot total **70%**.
+2.	LL dinilai melalui aktivitas mahasiswa (tugas-tugas dan kehadiran) dengan bobot **30%**.
+
+## Referensi Utama
+
+1. McEachern, William A. 2019. *Principles of Microeconomics*. Cengage Learning.
+2. Besanko, D and Braeutigam, Ronald R., 2020. *Microeconomics*, 6th edition. John Wiley & Sons.
+
+---
+
+## Materi Perkuliahan:
+
+- [Minggu 1: Sains dan Seni Analisis Ekonomi](https://bangtedy.github.io/mikroekonomi/minggu1#1)
+- [Minggu 2: Alat dan Sistem Ekonomi](https://bangtedy.github.io/mikroekonomi/minggu2#1)
+- [Minggu 3: Pembuat Keputusan Ekonomi](https://bangtedy.github.io/mikroekonomi/minggu3#1)
+- [Minggu 4: Permintaan, Penawaran dan Pasar](https://bangtedy.github.io/mikroekonomi/minggu4#1)
+- [Minggu 5: Elastisitas Permintaan dan Penawaran](https://bangtedy.github.io/mikroekonomi/minggu5#1)
+- [Minggu 6: Permintaan dan Pilihan Konsumen](https://bangtedy.github.io/mikroekonomi/minggu6#1)
+- [Minggu 7: Review pra UTS](https://bangtedy.github.io/mikroekonomi/minggu7#1)
+- **Minggu 8: UTS**
+- [Minggu 9: Produksi dan Biaya](https://bangtedy.github.io/mikroekonomi/minggu9#1)
+- [Minggu 10: Pasar Bersaing sempurna](https://bangtedy.github.io/mikroekonomi/minggu10#1)
+- [Minggu 11: Monopoli](https://bangtedy.github.io/mikroekonomi/minggu11#1)
+- [Minggu 12: Persaingan Monopolistik dan Oligopoli](https://bangtedy.github.io/mikroekonomi/minggu12#1)
+- [Minggu 13: Pasar Input ](https://bangtedy.github.io/mikroekonomi/minggu13#1)
+- [Minggu 14: Kapital dan Kewirausahaan](https://bangtedy.github.io/mikroekonomi/minggu14#1)
+- [Minggu 15: Review pra UAS](https://bangtedy.github.io/mikroekonomi/minggu15#1)
+- **Minggu 16: UAS**
+
+---
+class: inverse, right, middle
+
+<img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
+
+## Kso'on, find me at...
+
+[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
+[`r fa(name = "github")` @bangtedy](https://github.com/bangtedy)  
+[`r fa(name = "link")` bangtedy.github.io](https://bangtedy.github.io)
