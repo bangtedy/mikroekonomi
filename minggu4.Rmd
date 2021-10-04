@@ -1,0 +1,80 @@
+---
+title: "Permintaan, Penawaran dan Pasar"
+author: "Tedy Herlambang"
+subtitle: "Materi Minggu ke 4"
+institute: "Prodi Agribisnis, UPM"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "extra_css.css"]
+    lib_dir: libs
+    includes:
+      after_body: insert-logo.html
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+library(knitr)
+```
+layout: true
+
+<div class="my-footer"><span>bangtedy.rbind.io</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+---
+class: middle, center
+
+```{r out.width = '75%', echo=FALSE}
+knitr::include_graphics("img/fikri-rasyid-IabAwWbXr1Y-unsplash.jpg")
+```
+
+###### [Indonesian Snack, Bandung oleh @fikrirasyid](https://unsplash.com/@fikrirasyid)
+
+---
+class: 
+## Luaran Pembelajaran 
+
+Setelah mempelajari materi ini, mahasiswa akan dapat:
+1. Menjelaskan mengapa kemiringan kurva permintaan negatif.
+2. Mengidentifikasi hal-hal yang dapat menggeser sebuah kurva permintaan ke kiri atau ke kanan.
+3. Menjelaskan mengapa kemiringan kurva penawaran biasanya positif
+4. Mengidentifikasi hal-hal yand dapat menggeser sebuah kurva penawaran ke kiri atau ke kanan
+5. Menjelaskan mengapa di dalam kondisi pasokan barang berlimpah harga akan tertekan dan dalam kondisi pasokan langka harga akan terkerek.
+6. Memprediksi dampak perubahan permintaan dan penawaran pada harga dan jumlah keseimbangan pasar.
+7. Menjelaskan pengaruh penetapan harga dasar dan harga tertinggi oleh pemerintah pada pasar.
+
+---
+class: inverse, right, middle
+
+<img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
+
+## Kso'on, find me at...
+
+[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
+[`r fa(name = "github")` @bangtedy](https://github.com/bangtedy)  
+[`r fa(name = "link")` bangtedy.rbind.io](https://bangtedy.rbind.io)
