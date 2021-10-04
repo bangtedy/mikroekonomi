@@ -60,5 +60,5 @@ class: inverse, right, middle
 
 [`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
 [`r fa(name = "github")` @bangtedy](https://github.com/bangtedy)  
-[`r fa(name = "link")` bangtedy.rbind.io](https://bangtedy.github.io)
+[`r fa(name = "link")` bangtedy.github.io](https://bangtedy.github.io)
 
