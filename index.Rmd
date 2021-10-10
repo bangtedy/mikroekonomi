@@ -2,25 +2,21 @@
 title: "Mikroekonomi"
 subtitle: "Kontrak Perkuliahan"
 author: "Tedy Herlambang"
-institute: "Prodi Agribisnis, UPM"
+institute: "Kontrak Perkuliahan"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
-    css: ["xaringan-themer.css", "extra_css.css"]
+    css: ["useR", "uwm-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
-    includes:
-      in_header: header.html
-      after_body: insert-logo.html
 ---
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-library(knitr)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 # options(knitr.table.format = "html")
 library(fontawesome) # from github: https://github.com/rstudio/fontawesome
@@ -92,8 +88,7 @@ class: inverse, right, middle
 
 <img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
 
-## Kso'on, find me at...
+### Kso'on, find me at...
 
 [`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
-[`r fa(name = "github")` @bangtedy](https://github.com/bangtedy)  
-[`r fa(name = "link")` bangtedy.github.io](https://bangtedy.github.io)
+[`r fa(name = "blog")` bangtedy.github.io](https://bangtedy.github.io)

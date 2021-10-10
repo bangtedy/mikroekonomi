@@ -2,19 +2,17 @@
 title: "Pendahuluan"
 subtitle: "Minggu ke 1"
 author: "Tedy Herlambang"
+institute: "Materi Minggu ke 1"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["xaringan-themer.css", "extra_css.css"]
+    css: ["useR", "uwm-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
-    includes:
-      in_header: header.html
-      after_body: insert-logo.html
 ---
 
 ```{r setup, include=FALSE}
@@ -106,6 +104,7 @@ Apa yang dikelola oleh seorang *Young Agripreneur*?
 Bagaimana dengan jasa transportasi, pembiayaan pertanian, asuransi pertanian?
 
 ---
+
 # Pembuat Keputusan Ekonomi dan Pasar
 Empat pembuat keputusan di dalam perekonomian: 
 - rumah tangga, 
@@ -133,25 +132,29 @@ Empat pembuat keputusan di dalam perekonomian:
 ---
 class: inverse
 
-# Sains Analisis Ekonomi
+## Sains Analisis Ekonomi
 
-## - Peran dari teori
-## - Metode ilmiah
-## - Analisis normatif dan positif
-## - Memprediksi perilaku rata-rata
+- Peran dari teori
+- Metode ilmiah
+- Analisis normatif dan positif
+- Memprediksi perilaku rata-rata
+
 ---
-# Ilmu Ekonomi sebagai Sains
+
+## Ilmu Ekonomi sebagai Sains
 Ekonom mencoba menganalisis masalah ekonomi dengan objektivitas metode ilmiah. 
 
 Seorang ekonom mengkaji masalah ekonomi seperti seorang sarjana pertanian menganalisis tanaman: 
 - mencari teori yang relevan, membuat hipotesis, mengumpulkan data dan menganalisis data sebagai upaya membuktikan atau menolak teori.
 ---
 
-# "Jebakan" dalam Analisis Ekonomi
-## - Asosiasi tidak sama dengan sebab akibat
-## - *The Fallacy of Composition*
-## - *The Mistake of Ignoring the Secondary Effects*
+## "Jebakan" dalam Analisis Ekonomi
+
+ - Korelasi tidak sama dengan sebab akibat
+ - *The Fallacy of Composition*
+ - *The Mistake of Ignoring the Secondary Effects*
 ---
+
 class: inverse, right, middle
 
 <img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
@@ -159,8 +162,7 @@ class: inverse, right, middle
 # Find me at...
 
 [`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
-[`r fa(name = "github")` @bangtedy](https://github.com/bangtedy)  
-[`r fa(name = "link")` bangtedy.github.io](https://bangtedy.github.io)
+[`r fa(name = "blog")` bangtedy.github.io](https://bangtedy.github.io)
 
 
 
