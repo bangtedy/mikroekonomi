@@ -57,7 +57,7 @@ knitr::include_graphics("img/fikri-rasyid-IabAwWbXr1Y-unsplash.jpg")
 
 ---
 class: 
-## Luaran Pembelajaran 
+## `r fa("book-open", fill = "green")` Luaran Pembelajaran 
 
 Setelah mempelajari materi ini, mahasiswa akan dapat:
 1. Menjelaskan mengapa kemiringan kurva permintaan negatif.
