@@ -4,10 +4,16 @@
     <title>Permintaan, Penawaran dan Pasar</title>
     <meta charset="utf-8" />
     <meta name="author" content="Tedy Herlambang" />
-    <meta name="date" content="2021-10-11" />
+    <meta name="date" content="2021-10-16" />
     <script src="libs/header-attrs/header-attrs.js"></script>
-    <link href="libs/remark-css/useR.css" rel="stylesheet" />
     <link href="libs/remark-css/uwm-fonts.css" rel="stylesheet" />
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link rel="stylesheet" href="uwm_nolog.css" type="text/css" />
     <link rel="stylesheet" href="extra_css.css" type="text/css" />
   </head>
   <body>
@@ -18,9 +24,13 @@ class: center, middle, inverse, title-slide
 ## Materi Minggu ke 4
 ### Tedy Herlambang
 ### Materi Minggu ke 4
-### 2021-10-11
+### 2021-10-16
 
 ---
+
+
+
+
 
 
 
@@ -36,7 +46,7 @@ layout: true
 ---
 class: middle, center
 
-&lt;img src="img/fikri-rasyid-IabAwWbXr1Y-unsplash.jpg" width="75%" /&gt;
+&lt;img src="img/fikri-rasyid-IabAwWbXr1Y-unsplash.jpg" width="71%" style="display: block; margin: auto;" /&gt;
 
 ###### [Indonesian Snack oleh @fikrirasyid Bandung](https://unsplash.com/@fikrirasyid)
 
@@ -55,11 +65,11 @@ Setelah mempelajari materi ini, mahasiswa akan dapat:
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Permintaan
+## Permintaan
 
 Berapa banyak risoles yang akan dibeli oleh mahasiswa perbulan jika harganya Rp 12.000/biji? Bagaimana jika harga naik menjadi Rp 15.000? atau turun ke Rp 10.000?  Hubungan antara harga dengan jumlah permintaan risoles disebut dengan **permintaan risoles**.
 
-### <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/></svg> Perhatikan permintaan mengindikasikan:
+### Perhatikan permintaan mengindikasikan:
 
 - Jumlah yang mau dan mampu dibeli oleh konsumen pada setiap harga selama waktu tertentu (*the quantity consumers are both willing and able to buy at each price during a given time period, other things constant*). 
 
@@ -70,7 +80,7 @@ Berapa banyak risoles yang akan dibeli oleh mahasiswa perbulan jika harganya Rp 
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Hukum Permintaan
+## Hukum Permintaan
 
 The quantity of a good that consumers are willing and able to buy per period varies inversely, or negatively, with the price, other things equal. 
 
@@ -85,7 +95,7 @@ Apakah perbedaan antara permintaan (*demand*), keinginan (*wants*) dan kebutuhan
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Dampak substitusi perubahan harga barang
+## Dampak substitusi perubahan harga barang
 
 Kelangkaan adalah hal riil
 
@@ -95,7 +105,7 @@ Jika tidak terjadi kelangkaan (mungkinkah ini terjadi?), maka barang-barang semu
 
 ---
 
-### <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/></svg> Apa yang menjelaskan hukum permintaan? 
+### Apa yang menjelaskan hukum permintaan? 
 
 Mengapa jumlah yang diminta meningkat ketika harga barang turun? 
 
@@ -109,7 +119,7 @@ Mengapa jumlah yang diminta meningkat ketika harga barang turun?
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Dampak substitusi perubahan harga kue
+## Dampak substitusi perubahan harga kue
 
 - The change in the relative price—the price of one good relative to the prices 
 of other goods—causes the substitution effect. 
@@ -122,7 +132,7 @@ prices and no substitution effect.
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Dampak Pendapatan Perubahan Harga
+## Dampak Pendapatan Perubahan Harga
 
 - Pendapatan nominal.
   + The number of Rupiahs a person receives per period, such as Rp 6 million per month
@@ -137,7 +147,7 @@ prices and no substitution effect.
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Skedul Permintaan dan Kurva Permintaan
+## Skedul Permintaan dan Kurva Permintaan
 - Apa perbedaan keduanya?
 
 - Kurva permintaan: A curve showing the relation between the price of a good and the 
@@ -147,14 +157,14 @@ quantity consumers are willing and able to buy per period, other things constant
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Permintaan individu vs permintaan pasar
+## Permintaan individu vs permintaan pasar
 - *Permintaan individu*: the relation between the price of a good and the quantity purchased per period by an individual consumer, other things constant
 
 - *Permintaan pasar*: the relation between the price of a good and the quantity purchased per period by all consumers in the market, other things constant --&gt; sum of the individual demands in the market
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Barang normal vs barang inferior
+## Barang normal vs barang inferior
 
 - *Barang normal*: A good, such as *Indonesian snack*, for which demand increases, or 
 shifts rightward, as consumer income rises
@@ -163,7 +173,7 @@ shifts rightward, as consumer income rises
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Pergeseran Kurva Permintaan
+## Pergeseran Kurva Permintaan
 
 Hal-hal yang menggeser kurva permintaan:
 - Pendapatan konsumen
@@ -176,7 +186,7 @@ Hal-hal yang menggeser kurva permintaan:
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Penawaran (*supply*)
+## Penawaran (*supply*)
 
 - Supply indicates how much producers are *willing and able* to offer for sale per period at each possible price, other things constant. 
 - The law of supply states that the quantity supplied is usually directly related to its price, other things constant. 
@@ -185,7 +195,7 @@ Hal-hal yang menggeser kurva permintaan:
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Skedul Penawaran dan Kurva Penawaran
+## Skedul Penawaran dan Kurva Penawaran
 
 - Skedul penawaran: 
 - *Kurva Penawaran*: A curve showing the relation between price of a good and the quantity producers are willing and able to sell per period, other things constant.
@@ -194,7 +204,7 @@ Hal-hal yang menggeser kurva permintaan:
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Penawaran Individu dan Penawaran Pasar
+## Penawaran Individu dan Penawaran Pasar
 
 - *Penawaran Individu*: the relation between the price of a good and the quantity an 
 individual producer is willing and able to sell per period, *other things constant*.
@@ -202,7 +212,7 @@ individual producer is willing and able to sell per period, *other things consta
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Pergeseran Kurva Penawaran dan Pergerakan Sepanjang Kurva
+## Pergeseran Kurva Penawaran dan Pergerakan Sepanjang Kurva
 
 Hal-hal yang menyebabkan pergeseran kurva penawaran:
 - Teknologi yang semakin efisien
@@ -214,7 +224,7 @@ Hal-hal yang menyebabkan pergeseran kurva penawaran:
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Pasar
+## Pasar
 
 #### DEMAND AND SUPPLY CREATE A MARKET
 
@@ -229,7 +239,7 @@ plied.
 
 ---
 
-## <svg aria-hidden="true" role="img" viewBox="0 0 256 512" style="height:1em;width:0.5em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:red;overflow:visible;position:relative;"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg> Perubahan harga dan jumlah keseimbangan
+## Perubahan harga dan jumlah keseimbangan
 
 Kurva akan ditunjukkan di kelas saat perkuliahan.
 - Pergeseran kurva permintaan

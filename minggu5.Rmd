@@ -6,7 +6,7 @@ institute: "Materi Minggu ke 5"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["useR", "uwm-fonts", "extra_css.css"]
+    css: ["uwm_nolog.css", "uwm-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       slideNumberFormat: "%current%"
@@ -35,21 +35,32 @@ style_duo_accent(
   secondary_color = "#FF961C",
   inverse_header_color = "#FFFFFF"
 )
-library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
 ```
 layout: true
-class: middle, center
+
   
 <div class="my-footer"><span>bangtedy.github.io</span></div>
 
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
 ---
-
+class: inverse, middle, center
 # Work in progress
 
 ---
-class: inverse, right, middle
+class: right, middle
 
 <img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
 

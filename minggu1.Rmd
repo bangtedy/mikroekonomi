@@ -6,7 +6,7 @@ institute: "Materi Minggu ke 1"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["useR", "uwm-fonts", "extra_css.css"]
+    css: ["uwm_nolog.css", "uwm-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -142,10 +142,12 @@ class: inverse
 ---
 
 ## Ilmu Ekonomi sebagai Sains
+
 Ekonom mencoba menganalisis masalah ekonomi dengan objektivitas metode ilmiah. 
 
 Seorang ekonom mengkaji masalah ekonomi seperti seorang sarjana pertanian menganalisis tanaman: 
 - mencari teori yang relevan, membuat hipotesis, mengumpulkan data dan menganalisis data sebagai upaya membuktikan atau menolak teori.
+
 ---
 
 ## "Jebakan" dalam Analisis Ekonomi
