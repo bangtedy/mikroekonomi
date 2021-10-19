@@ -2,11 +2,11 @@
 title: "Pendahuluan"
 subtitle: "Minggu ke 1"
 author: "Tedy Herlambang"
-institute: "Materi Minggu ke 1"
+institute: ""
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["uwm_nolog.css", "uwm-fonts", "extra_css.css"]
+    css: ["ki_nolog.css", "ki-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -17,9 +17,15 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-# options(knitr.table.format = "html")
-library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
@@ -29,6 +35,18 @@ style_duo_accent(
   secondary_color = "#FF961C",
   inverse_header_color = "#FFFFFF"
 )
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
 ```
 layout: true
   

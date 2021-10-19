@@ -2,11 +2,11 @@
 title: "Pembuat Keputusan Ekonomi"
 author: "Tedy Herlambang"
 subtitle: "Materi Minggu ke 3"
-institute: "Materi Minggu ke 3"
+institute: ""
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
-    css: ["useR", "uwm-fonts", "extra_css.css"]
+    css: ["ki_nolog.css", "ki-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       slideNumberFormat: "%current%"
@@ -26,18 +26,27 @@ knitr::opts_chunk$set(
   warning = FALSE,
   hiline = TRUE
 )
-library(fontawesome) # from github: https://github.com/rstudio/fontawesome
-library(knitr)
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_solarized_light()
 style_duo_accent(
   primary_color = "#1381B0",
   secondary_color = "#FF961C",
   inverse_header_color = "#FFFFFF"
 )
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
 ```
 layout: true
 

@@ -1,12 +1,12 @@
 ---
 title: "Elastisitas Permintaan dan Penawaran"
-subtitle: "Minggu ke 5"
+subtitle: "Materi Minggu ke 5"
 author: "Tedy Herlambang"
-institute: "Materi Minggu ke 5"
+institute: ""
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ["uwm_nolog.css", "uwm-fonts", "extra_css.css"]
+    css: ["ki_nolog.css", "ki-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       slideNumberFormat: "%current%"
