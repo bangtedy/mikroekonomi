@@ -57,10 +57,98 @@ layout: true
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
 ---
-class: inverse, middle, center
-# Work in progress
+## Capaian Pembelajaran
+
+Setelah mempelajari ini, mahasiswa akan dapat
+
+1. Mendefinisikan dan menggambarkan elastisitas permintaan terhadap harga
+2. Mengidentifikasikan penentu-penentu elastisitas permintaan
+3. Mendefinisikan dan menggambarkan elastisitas penawaran terhadap harga
+4. Menjelaskan elastisitas pendapatan dan elastisitas silang 
+---
+
+## Elastisitas Permintaan terhadap Harga 
+- Selanjutnya kita sebut elastisitas permintaan saja
+- Elastisitas permintaan mengukur seberapa peka/responsif konsumen terhadapa perubahan harga.
+- Elastisitas permintaan mengukur persentase perubahan jumlah diminta dibagi persentasi perubahan harga barangnya. 
+
+$${Elastisitas-permintaan-thd-harga} = \frac{persentase. \Delta Q^D}{persentase. \Delta P}$$
+---
+## Rumus Umum Elastisitas Permintaan terhadap Harga
+
+$$E_D = \frac{\Delta q}{(q_1 + q_2)/2} : \frac{\Delta p}{p_1 + p_2/2}$$
+- Elastisitas menunjukkan hubungan antara: % $\Delta$ jumlah diminta dan % $\Delta$ harga. - Fokus kita ke % $\Delta$, satuan terlalu penting disini. 
+- Nilai elastisitas permintaan selalu <span style="color:red"> negatif</span> --> konvensi digunakan nilai mutlaknya. 
+- Mengapa nilai elastisitas permintaan selalu negatif
+---
+
+## Penggolongan Elastisitas Permintaan
+
+- <span style="color:green"> Inelastic</span>: persentasi perubahan jumlah diminta < persentasi perubahan harga. 
+  + the price elasticity has an absolute value less than 1.0
+- <span style="color:green">Unit elastic</span>: tpersentasi perubahan jumlah diminta =  persentasi perubahan harga
+  + the resulting price elasticity has an absolute value of 1.0
+- <span style="color:green">Elastic</span>: A change in price has a relatively large effect on quantity demanded; 
+  + persentasi perubahan jumlah diminta > persentasi perubahan harga; 
+  + the resulting price elasticity has an absolute value exceeding 1.0
 
 ---
+
+## Elastisitas dan Total Penerimana (Total Revenue)
+- Elastisitas juga menunjukkan bagaimana perubahan harga mempengaruhi total penerimaan
+- Total revenue: harga dikalikan jumlah diminta pada harga tersebut $TR=P.Q$
+- Jika kurva permintaan elastis: penurunan harga akan meningkatkan penerimaan. 
+- Total revenue mencapai maksimum pada kurva permintaan unit elastic. 
+- Jika kurva permintaan inelastis: penurunan harga akan menurunkan penerimaan. 
+---
+
+## Kurva permintaan elastisitas konstan
+
+- Kurva permintaan elastis sempurna: garis horisontal...perubahan harga mengakibatkan jumlah permintaan nol.
+  + Nilai elastisitas tak terhingga (infinity)
+- Kurva permintaan inelastis sempurna: garis vertikal...perubahan harga tidak berpengaruh pada jumlah diminta
+  + Nilai elastisitas nol
+- Kurva permintaan unit elastis: sepajang kurva nilainya 1.
+  + perubahan harga sama dengan perubahan jumlah diminta ... total penerimaan tidak berubah.
+  + the elasticity has an absolute value of 1.0
+
+---
+##  Penentu Elastisitas Permintaan
+
+- Ketersediaan barang pengganti
+- Besar pengeluaran konsumen untuk barang tersebut
+- Waktu untuk melakukan penyesuaian
+---
+
+## Elastisitas Permintaan terhadap Harga
+
+- Mengukur responsivitas jumlah yang ditawarkan karena perubahan harga
+- Diukur dengan menghitung: the percentage change in quantity supplied divided by 
+the percentage change in price
+
+---
+
+## Constant Elasticity Supply Curves
+
+- Perfectly Elastic Supply Curve
+- Perfectly Inelastic Supply Curve
+- Unit-Elastic Supply Curve
+
+---
+
+## Determinants of Supply Elasticity
+
+
+---
+## Elastisitas Lain
+
+- Elastisitas Permintaan terhadap pendapatan (Income Elasticity of Demand)
+- Elastisitas silang (Cross-Price Elasticity of Demand)
+  + Complements (-)
+  + Substitutes (+)
+
+---
+
 class: right, middle
 
 <img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
@@ -69,4 +157,4 @@ class: right, middle
 
 [`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
 [`r fa(name = "blog")` bangtedy.github.io](https://bangtedy.github.io)
----
+
