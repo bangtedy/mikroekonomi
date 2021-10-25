@@ -6,7 +6,7 @@ institute: "Materi Minggu ke 6"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
-    css: ["useR", "uwm-fonts", "extra_css.css"]
+    css: ["useR_nolog.css", "tamu-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       slideNumberFormat: "%current%"
@@ -45,7 +45,7 @@ class: middle, center
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 ---
 
-# Work in progress
+
 ---
 class: inverse, right, middle
 

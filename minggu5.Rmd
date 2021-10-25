@@ -7,7 +7,7 @@ date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     chakra: libs/remark-latest.min.js
-    css: ["ki_nolog.css", "ki-fonts", "extra_css.css"]
+    css: ["useR_nolog.css", "tamu-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       slideNumberFormat: "%current%"
@@ -77,24 +77,25 @@ $${Elastisitas-permintaan-thd-harga} = \frac{persentase. \Delta Q^D}{persentase.
 ## Rumus Umum Elastisitas Permintaan terhadap Harga
 
 $$E_D = \frac{\Delta q}{(q_1 + q_2)/2} : \frac{\Delta p}{p_1 + p_2/2}$$
-- Elastisitas menunjukkan hubungan antara: % $\Delta$ jumlah diminta dan % $\Delta$ harga. - Fokus kita ke % $\Delta$, satuan terlalu penting disini. 
+- Elastisitas menunjukkan hubungan antara: % $\Delta$ jumlah diminta dan % $\Delta$ harga. 
+- Fokus kita ke % $\Delta$, satuan tidak terlalu penting disini. 
 - Nilai elastisitas permintaan selalu <span style="color:red"> negatif</span> --> konvensi digunakan nilai mutlaknya. 
 - Mengapa nilai elastisitas permintaan selalu negatif
 ---
 
 ## Penggolongan Elastisitas Permintaan
 
-- <span style="color:green"> Inelastic</span>: persentasi perubahan jumlah diminta < persentasi perubahan harga. 
+- <span style="color:green"> Inelastic</span>: persentase perubahan jumlah diminta < persentase perubahan harga. 
   + the price elasticity has an absolute value less than 1.0
-- <span style="color:green">Unit elastic</span>: tpersentasi perubahan jumlah diminta =  persentasi perubahan harga
+- <span style="color:green">Unit elastic</span>: persentase perubahan jumlah diminta =  persentase perubahan harga
   + the resulting price elasticity has an absolute value of 1.0
 - <span style="color:green">Elastic</span>: A change in price has a relatively large effect on quantity demanded; 
-  + persentasi perubahan jumlah diminta > persentasi perubahan harga; 
+  + persentase perubahan jumlah diminta > persentase perubahan harga; 
   + the resulting price elasticity has an absolute value exceeding 1.0
 
 ---
 
-## Elastisitas dan Total Penerimana (Total Revenue)
+## Elastisitas dan Total Penerimaan (Total Revenue)
 - Elastisitas juga menunjukkan bagaimana perubahan harga mempengaruhi total penerimaan
 - Total revenue: harga dikalikan jumlah diminta pada harga tersebut $TR=P.Q$
 - Jika kurva permintaan elastis: penurunan harga akan meningkatkan penerimaan. 
@@ -120,11 +121,10 @@ $$E_D = \frac{\Delta q}{(q_1 + q_2)/2} : \frac{\Delta p}{p_1 + p_2/2}$$
 - Waktu untuk melakukan penyesuaian
 ---
 
-## Elastisitas Permintaan terhadap Harga
+## Elastisitas Penawaran terhadap Harga
 
 - Mengukur responsivitas jumlah yang ditawarkan karena perubahan harga
-- Diukur dengan menghitung: the percentage change in quantity supplied divided by 
-the percentage change in price
+- Diukur dengan menghitung: the percentage change in quantity supplied divided by the percentage change in price
 
 ---
 
