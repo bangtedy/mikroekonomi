@@ -7,7 +7,7 @@ date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
     chakra: libs/remark-latest.min.js
-    css: ["useR_nolog.css", "tamu-fonts", "extra_css.css"]
+    css: ["useR_nolog.css", "tamubigger-fonts.css", "extra_css.css"]
     lib_dir: libs
     nature:
       slideNumberFormat: "%current%"
@@ -149,7 +149,7 @@ $$E_D = \frac{\Delta q}{(q_1 + q_2)/2} : \frac{\Delta p}{p_1 + p_2/2}$$
 
 ---
 
-class: right, middle
+class: inverse, right, middle
 
 <img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
 

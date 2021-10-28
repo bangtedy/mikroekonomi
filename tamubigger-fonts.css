@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
-body { font-family: 'Open Sans', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+body { font-family: 'Open Sans', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; font-size: 110%}
 
 h1, h2, h3 { font-family: 'Yanone Kaffeesatz'; }
 

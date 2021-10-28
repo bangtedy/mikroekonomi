@@ -1,57 +1,190 @@
 ---
-title: "Permintaan dan Pilihan Konsumen"
-subtitle: "Minggu ke 6"
-author: "Tedy Herlambang"
-institute: "Materi Minggu ke 6"
-date: '`r Sys.Date()`'
+title: Tedy Herlambang/mikroekonomi
 output:
   xaringan::moon_reader:
-    css: ["useR_nolog.css", "tamu-fonts", "extra_css.css"]
+    chakra: libs/remark-latest.min.js
+  # self_contained: TRUE
+    includes:
+      in_header: conf/style-header.html
     lib_dir: libs
+    seal: false
+    css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
     nature:
-      slideNumberFormat: "%current%"
-      highlightStyle: github
-      highlightLines: true
+      beforeInit: ["conf/js/gifffer.min.js", "conf/js/style-macros.js"]
       ratio: 16:9
-      countIncrementalSlides: true
 ---
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
+
+```{r setup, echo = F}
 knitr::opts_chunk$set(
-  fig.width=9, fig.height=3.5, fig.retina=3,
-  out.width = "100%",
-  cache = FALSE,
-  echo = TRUE,
-  message = FALSE, 
+  comment = "#",
+  #cache = TRUE,
+  collapse = TRUE,
   warning = FALSE,
-  hiline = TRUE
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5.25,
+  fig.align = 'center',
+  fig.retina = 3
 )
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
+# base plot layout
+mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
+
+# xaringan Extra
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
 )
-library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_panelset()
+xaringanExtra::use_scribble()
 ```
-layout: true
-class: middle, center
+class: middle, title-slide
+
+<!-- top logo (comment to remove or edit on `conf/css/style.css:23`) -->
+<div class="lab-logo"></div>
+<!-- <div class="uni-logo"></div> -->
+
+# Permintaan dan Pilihan Konsumen
+
+<hr width="55%" align="left" size="0.3" color="orange"></hr>
+
+## Materi Minggu ke 6
+
+### Tedy Herlambang .small[<br> + Mikroekonomi]
+
+<br><br><br><br><br>
+[<i class="fas fa-blog" style="color:#e7e8e2"></i> bangtedy](https://bangtedy.github.io)
+
+[<i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> @t_hlb](https://twitter.com/t_hlb)
+---
+
+# Capaian Pembelajaran
+
+Setelah memperlajari bab ini, Anda akan dapat 
+- Menjelaskan alasan utilitas marjinal turun dengan semakin banyak konsumsi barang atau jasa.
+- Menjelaskan kondisi yang memaksimumkan utilitas dengan selera, harga barang dan anggaran tertentu.
+- Menjelaskan bagaimana Anda bisa memperoleh surplus konsumen dari suatu barang walaupun penilaian marjinal dari barang tersebut sama dengan harganya.
+
+---
+class: middle, center, inverse
+
+# UTILITY ANALYSIS (Analisis Utilitas)
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+# Analisis Utilitas
+
+1. Selera dan Preferensi
+  + Ekonomi menganggap bahwa selera itu given dan stabil, setiap orang punya selera yang berbeda tetapi tidak terus-menerus berubah-ubah. 
+
+2. Hukum Utilitas Marjinal yang Menurun (*Law of Diminishing Marginal Utility*) 
+  + Semakin banyak seseorang mengkonsumsi suatu barang, semakin kecil peningkatan utilitas total dari setiap unit tambahan barang yang dikonsumsi, *hal lain dianggap tetap*.
   
-<div class="my-footer"><span>bangtedy.github.io</span></div>
-
-<!-- this adds the link footer to all slides, depends on my-footer class in css-->
 ---
 
+class: middle, center, inverse
+# MEASURING UTILITY (Mengukur Utilitas)
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
 
 ---
-class: inverse, right, middle
+# Mengukur Utilitas
 
-<img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
+1. Unit Utilitas
+2. Utility Maximization in a World Without Scarcity
+3. Utility Maximization in a World of Scarcity
+4. Utility-Maximizing Conditions
+5. Marginal Utility and the Law of Demand
+---
+## Unit Utilitas
 
-# Find me at...
+- Kita dapat menggunakan unit utilitas untuk mengevaluasi preferensi konsumen.
+- Kita dapat membandingkan utilitas total yang didapat seorang konsumen dari produk yang berbeda, juga utilitas marjinal yang didapatnya tambahan konsumsi suatu barang. 
+- Tetapi kita tidak dapat membandingkan tingkat utilitas antar orang  berbeda. 
+- *Setiap orang memiliki skala utilitas subyektif yang unik*. 
 
-[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
-[`r fa(name = "blog")` bangtedy.github.io](https://bangtedy.github.io)
+---
+## Maksimisasi utilitas dalam kondisi keberlimpahan. 
+> Jika sebuah barang gratis, orang akan meningkatkan konsumsinya sepanjang nilai utilitas marjinalnya positif. 
+
+---
+
+## Maksimisasi utilitas dalam kondisi kelangkaan 
+- Barang-barang biasanya tersedia sedikit/langka, tidak gratis. 
+- Utilitas seseorang masih didasarkan pada seleranya, tetapi pendapatannya sekarang membatasi (jumlah barang yang bisa dicapai). 
+- Bagaimana seseorang dapat mengalokasikan pendapatannya antara dua jenis barang untuk memaksimumkan utilitas? 
+---
+
+## Kondisi yang Memaksimumkan Utilitas
+### Keseimbangan Konsumen 
+
+- Kondisi dimana anggaran seseorang dibelanjakan semua dan uang yang dibelanjakan untuk kedua jenis barang menghasilkan utilitas marjinal yang sama. 
+
+$$\frac {MU_x}{P_x} = \frac {MU_y}{P_y}$$ 
+
+- Sekali seorang konsumen berada dalam kondisi keseimbangan, tidak ada cara lagi untuk meningkatkan utilitas dengan realokasi anggarannya. 
+- Setiap perubahan kombinasi barang akan menurunkan utilitas. 
+---
+
+## Marginal Utility and the Law of Demand
+
+- Analisis utilitas terkait dengan permintaan barang
+
+---
+
+class: middle, center, inverse
+# APPLICATIONS OF UTILITY ANALYSIS
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+# Penerapan Analisis Utilitas
+1. Surplus Konsumen
+2. Permintaan Pasar dan Surplus Konsumen
+3. Peran Waktu dalam Permintaan
+
+---
+## Surplus Konsumen
+
+Along the demand curve, the price reflects marginal valuation of the good.
+
+<br />
+<span style="color:green">Marginal valuation</span>: the dollar value of the marginal utility derived from consuming each additional unit of a good.
+
+<br />
+<span style="color:green">Consumer surplus</span>: the difference between the most a consumer would pay for a given quantity of a good and what the consumer actually pays.
+
+<br />
+<span style="color:green">Consumer surplus</span> is reflected by the area under the demand curve but above the price.
+
+---
+## Peran Waktu dalam Permintaan
+
+- Konsumsi mempunyai harga "uang" dan harga "waktu".
+- Barang dikonsumsi karena memberikan manfaat. 
+- Seseorang membeli makanan, baju, hape, komputer karena manfaat yang didapat. 
+- Ceteris paribus, seseorang mau membayar lebih jika bisa memperoleh manfaat lebih awal/cepat: komputer yang lebih cepat, obat yang lebih manjur, buah-buahan non biji, dll. 
+
+
+---
+class: inverse
+
+.pull-left1[
+<br>
+
+.font70[A single study is never the end of the story; multiple studies are 
+needed before we can reach defensible conclusions about social phenomena.] 
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+<br><br><br><br><br><br><br><br>
+
+**Special thanks to**
+
+Mahasiswa Agribisnis Angkatan '21
+]
+
+.pull-right1[
+<br>
+![:scale 71%]()
+]
