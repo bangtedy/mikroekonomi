@@ -6,7 +6,7 @@ institute: ""
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
-    css: ["ki_nolog.css", "ki-fonts", "extra_css.css"]
+    css: ["useR_nolog.css", "uwm-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -102,7 +102,6 @@ Nilai Akhir (**NA**) adalah nilai kumulatif dari nilai ujian tengah semester (UT
 ---
 class: inverse, right, middle
 
-<img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
 
 ### Kso'on, find me at...
 
