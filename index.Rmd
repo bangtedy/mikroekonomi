@@ -6,7 +6,8 @@ institute: ""
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
-    css: ["useR_nolog.css", "uwm-fonts", "extra_css.css"]
+    chakra: libs/remark-latest.min.js
+	css: ["useR_nolog.css", "uwm-fonts", "extra_css.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
