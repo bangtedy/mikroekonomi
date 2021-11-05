@@ -1,7 +1,7 @@
 /*title page*/
   .title-slide {
     # background-image: url('../../img/rmbg.jpg');
-    background-color: #021f06;
+    background-color: #9bb80d;
     background-size: contain;
     border: 0px;
     background-position: 600px 0;
@@ -59,7 +59,7 @@
   }
 
   .title-slide a {
-    color: #e7e8e2;
+    color: #afd106;
     font-size: 16px;
     font-weight: lighter;
 
