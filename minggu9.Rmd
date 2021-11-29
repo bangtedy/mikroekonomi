@@ -47,7 +47,7 @@ class: middle, title-slide
 <div class="lab-logo"></div>
 <!-- <div class="uni-logo"></div> -->
 
-# Permintaan dan Pilihan Konsumen
+# Produksi dan Biaya dalam Perusahaan
 
 <hr width="55%" align="left" size="1.3" color="orange"></hr>
 
