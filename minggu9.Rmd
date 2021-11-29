@@ -1,57 +1,193 @@
 ---
-title: "Produksi dan Biaya"
-subtitle: "Minggu ke 9"
-author: "Tedy Herlambang"
-institute: "Materi Minggu ke 9"
-date: '`r Sys.Date()`'
+title: Tedy Herlambang/mikroekonomi
 output:
   xaringan::moon_reader:
-    css: ["useR", "uwm-fonts", "extra_css.css"]
+    chakra: libs/remark-latest.min.js
+  # self_contained: TRUE
+    includes:
+      in_header: conf/style-header.html
     lib_dir: libs
+    seal: false
+    css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
     nature:
-      slideNumberFormat: "%current%"
-      highlightStyle: github
-      highlightLines: true
+      beforeInit: ["conf/js/gifffer.min.js", "conf/js/style-macros.js"]
       ratio: 16:9
-      countIncrementalSlides: true
 ---
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
+
+```{r setup, echo = F}
 knitr::opts_chunk$set(
-  fig.width=9, fig.height=3.5, fig.retina=3,
-  out.width = "100%",
-  cache = FALSE,
-  echo = TRUE,
-  message = FALSE, 
+  comment = "#",
+  #cache = TRUE,
+  collapse = TRUE,
   warning = FALSE,
-  hiline = TRUE
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5.25,
+  fig.align = 'center',
+  fig.retina = 3
 )
+
+# base plot layout
+mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
+
+# xaringan Extra
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_panelset()
+xaringanExtra::use_scribble()
 ```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
-)
-library(fontawesome) # from github: https://github.com/rstudio/fontawesome
-```
-layout: true
-class: middle, center
+class: middle, title-slide
+
+<!-- top logo (comment to remove or edit on `conf/css/style.css:23`) -->
+<div class="lab-logo"></div>
+<!-- <div class="uni-logo"></div> -->
+
+# Permintaan dan Pilihan Konsumen
+
+<hr width="55%" align="left" size="1.3" color="orange"></hr>
+
+## Mikroekonomi: Materi Minggu ke 9 
+
+### Tedy Herlambang .small[<br>]
+
+<br><br><br><br><br>
+[<i class="fas fa-blog" style="color:#e7e8e2"></i> bangtedy.github.io](https://bangtedy.github.io)
+
+[<i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> @t_hlb](https://twitter.com/t_hlb)
+---
+
+# Capaian Pembelajaran
+
+Setelah mempelajari bab ini, Anda diharapkan dapat:
+- Membedakan dan menjelaskan tiga jenis keuntungan
+- Menjelaskan fitur penting produksi dalam jangka pendek
+- Menjelaskan mengapa biaya rata-rata mencapai minimum ketika MC=AC
+- Menjelaskan sumber-sumber economies of scale dan diseconomies of scale
+---
+class: middle, center, inverse
+
+# Biaya dan Keuntungan
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+---
+# Cost and Profit
+
+- With supply we assume that producers try to maximize profit, and this goal motivates their behaviour. 
+- Firms try to earn a profit by transforming resources into products (goods/services). 
+- Over time, firms that survive and thrive are those that are more profitable. 
+- Unprofitable firms eventually fail. 
+- Each firm’s decision makers must choose what goods and services to produce and what resources to employ. 
+- They must make plans while confronting uncertainty about consumer demand, resource availability, and the intentions of other firms in the market.
   
-<div class="my-footer"><span>bangtedy.github.io</span></div>
+---
+# Biaya Eksplisit and Implisit
 
-<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+- Biaya eksplisit: opportunity cost of resources employed by a firm that takes the form of cash payments
+- Biaya implisit: a firm’s opportunity cost of using its own resources or those provided by its owners without a corresponding cash payment
+
+---
+# Pengukuran Keuntungan
+
+- Keuntungan akuntansi: a firm’s total revenue minus its explicit costs
+- Keuntungan ekonomi (*economic profit*): a firm’s total revenue minus its explicit and implicit costs
+- Keuntungan normal (*normal profit*): a firm’s accounting profit when all resources earn their opportunity cost; equal to implicit cost
+
 ---
 
-# Work in progress
+class: middle, center, inverse
+# Produksi dalam Jangka Pendek
+<hr width="100%" align="left" size="0.3" color="red"></hr>
+
 ---
-class: inverse, right, middle
+# Input tetap dan variabel (Fixed and Variable input)
+- <span style="color:gold"> variable input</span>: any resource that can be varied in the short run to increase or decrease production
+- <span style="color:gold">fixed input</span>: any resource that cannot be varied 
+in the short run
+- <span style="color:green">short run</span>: a period during which at least one of a firm’s resources is fixed
+- <span style="color:green">long run</span>: a period during which all resources under the firm’s control are variable
 
-<img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
+---
+# Law of Diminishing Marginal returns
+- Produksi total (Total product): a firm’s total output 
+- Fungsi Produksi (production function): the relationship between 
+resources employed and a firm’s total product
+- Produk marjinal (marginal product): the change in total product when a particular resource increases by one unit, all other resources constant
+- Increasing marginal returns: the marginal product of a variable resource increases as each additional unit of that resource is employed
+- Law of diminishing marginal returns: as more of a variable resource is added to a given amount of other resources, marginal product eventually declines and could become negative
+---
+# Kurva Total dan Marjinal Produk
 
-# Find me at...
 
-[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
-[`r fa(name = "blog")` bangtedy.rbind.io](https://bangtedy.rbind.io)
+---
+
+class: middle, center, inverse
+# Biaya Produksi dalam Jangka Pendek
+<hr width="100%" align="left" size="0.3" color="red"></hr>
+
+---
+# Biaya Produksi dalam Jangka Pendek
+
+- Biaya tetap (fixed cost): any production cost that is independent of the 
+firm’s rate of output
+- Biaya variabel (variable cost): any production cost that changes as 
+the rate of output changes
+- Biaya total (total cost): the sum of fixed cost and variable cost,or TC= FC + VC
+- Biaya marjinal (marginal cost): the change in total cost resulting from a one-unit change in output; the change in total cost divided by the change in output, or MC = ΔTC/Δq
+---
+# Hubungan antara biaya marjinal dengan biaya rata-rata 
+
+- Biaya tetap rata-rata (average fixed cost): fixed cost divided by output, 
+or AFC=FC /q
+- Biaya variabel rata-rata (average variable cost): variable cost divided by output, or AVC= VC /q
+- Biaya total rata-rata (average total cost):total cost divided by output, 
+or ATC =TC /q. Also the sum of average variable cost and average fixed cost, or ATC = AVC + AFC 
+
+---
+
+
+class: middle, center, inverse
+# Biaya Produksi dalam Jangka Panjang
+<hr width="100%" align="left" size="0.3" color="red"></hr>
+
+---
+# Skala ekonomi dan diseconomies of scale
+
+- Economies of scale:forces that reduce a firm’s average cost as the scale of operation expands in the long run
+
+- Diseconomies of scale: forces that may eventually increase a firm’s average cost as the scale of operation expands in the long run
+
+---
+#  Biaya rata-rata jangka panjang
+- Long-run average cost curve: a curve that indicates the lowest average cost of production at each rate of output when the size, or scale, of the firm varies; also called the planning curve.
+
+- Constant long-run average cost:  a condition that occurs if, over some range of output, long-run average cost neither increases nor decreases with changes in firm size
+- Minimum efficient scale: the lowest rate of output at which a firm takes full advantage of economies of scale
+
+---
+
+class: inverse
+
+.pull-left1[
+<br>
+
+.font70[A single study is never the end of the story; multiple studies are 
+needed before we can reach defensible conclusions about social phenomena.] 
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+<br><br><br><br><br><br><br><br>
+
+**Special thanks to**
+
+Mahasiswa Agribisnis Angkatan '21
+]
+
+.pull-right1[
+<br>
+![:scale 71%]()
+]

@@ -1,57 +1,151 @@
 ---
-title: "Persaingan Monopolistik dan Oligopoli"
-subtitle: "Minggu ke 12"
-author: "Tedy Herlambang"
-institute: "Materi Minggu ke 12"
-date: '`r Sys.Date()`'
+title: Tedy Herlambang/mikroekonomi
 output:
   xaringan::moon_reader:
-    css: ["useR", "uwm-fonts", "extra_css.css"]
+    chakra: libs/remark-latest.min.js
+  # self_contained: TRUE
+    includes:
+      in_header: conf/style-header.html
     lib_dir: libs
+    seal: false
+    css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
     nature:
-      slideNumberFormat: "%current%"
-      highlightStyle: github
-      highlightLines: true
+      beforeInit: ["conf/js/gifffer.min.js", "conf/js/style-macros.js"]
       ratio: 16:9
-      countIncrementalSlides: true
 ---
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
+
+```{r setup, echo = F}
 knitr::opts_chunk$set(
-  fig.width=9, fig.height=3.5, fig.retina=3,
-  out.width = "100%",
-  cache = FALSE,
-  echo = TRUE,
-  message = FALSE, 
+  comment = "#",
+  #cache = TRUE,
+  collapse = TRUE,
   warning = FALSE,
-  hiline = TRUE
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5.25,
+  fig.align = 'center',
+  fig.retina = 3
 )
+
+# base plot layout
+mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
+
+# xaringan Extra
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_panelset()
+xaringanExtra::use_scribble()
 ```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
-)
-library(fontawesome) # from github: https://github.com/rstudio/fontawesome
-```
-layout: true
-class: middle, center
-  
-<div class="my-footer"><span>bangtedy.github.io</span></div>
+class: middle, title-slide
 
-<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+<!-- top logo (comment to remove or edit on `conf/css/style.css:23`) -->
+<div class="lab-logo"></div>
+<!-- <div class="uni-logo"></div> -->
+
+# MONOPOLISTIC COMPETITION AND OLIGOPOLY
+
+<hr width="55%" align="left" size="1.3" color="orange"></hr>
+
+## Mikroekonomi: Materi Minggu ke 12 
+
+### Tedy Herlambang .small[<br>]
+
+<br><br><br><br><br>
+[<i class="fas fa-blog" style="color:#e7e8e2"></i> bangtedy.github.io](https://bangtedy.github.io)
+
+[<i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> @t_hlb](https://twitter.com/t_hlb)
+
 ---
 
-# Work in progress
+# LEARNING OUTCOMES
+
+After studying this chapter, you will be able to
+
+- Outline the monopolistic and competitive elements of monopolistic competition
+- Describe the sources of oligopoly and explain why some industries become oligopolies
+- Explain why predicting oligopoly behavior is so difficult
+- Summarize the similarities and differences between an oligopoly and perfect competition in terms of price, output, and long-run profitability
+ 
 ---
-class: inverse, right, middle
+# INTRODUCTION
 
-<img class= "circle" src="https://github.com/bangtedy.png" width="150px"/>
+- Perfect competition and monopoly are extreme market structures. 
+- Under perfect competition, many suppliers offer an identical product and, in the long run, entry and exit erase economic profit. 
+- A monopolist supplies a product with no close substitutes in a market where 
+natural or artificial barriers keep out would-be competitors, so a monopolist can earn economic profit in the long run. 
+- These polar market structures are logically appealing and offer a useful 
+description of some industries observed in the economy.
+- But most firms fit into neither market structure. 
+- This chapter examines the two remaining market structures that together 
+account for most firms in the economy.
 
-# Find me at...
+---
+class: middle, center, inverse
 
-[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
-[`r fa(name = "blog")` bangtedy.rbind.io](https://bangtedy.rbind.io)
+# # MONOPOLISTIC COMPETITION
+<hr width="100%" align="left" size="0.3" color="red"></hr>
+
+---
+
+> A market structure with many firms selling products that are substitutes but different enough that each firm’s demand curve slopes downward; firm entry is 
+relatively easy
+
+---
+
+# Product Differentiation
+
+- Physical Differences
+- Location
+- Services
+- Product Image
+
+---
+# Short-Run Profit Maximization or Loss Minimization
+- Marginal Revenue Equals Marginal Cost
+- Maximizing Profit or Minimizing Loss in the Short Run
+
+---
+# Zero Economic Profit in the Long Run
+
+
+
+---
+# Monopolistic Competition and Perfect Competition Compared
+
+---
+
+class: middle, center, inverse
+
+# OLIGOPOLY
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+
+---
+
+
+class: inverse
+
+.pull-left1[
+<br>
+
+.font70[A single study is never the end of the story; multiple studies are 
+needed before we can reach defensible conclusions about social phenomena.] 
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+<br><br><br><br><br><br><br><br>
+
+**Special thanks to**
+
+Mahasiswa Agribisnis Angkatan '21
+]
+
+.pull-right1[
+<br>
+![:scale 71%]()
+]
