@@ -1,0 +1,203 @@
+---
+title: "Pendahuluan"
+subtitle: "Minggu ke 1"
+author: "Tedy Herlambang"
+institute: ""
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["useR_nolog.css", "uwm-fonts", "extra_css.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+```{r, echo = FALSE}
+# google scholar metadata
+library(metathis)
+
+if (knitr::is_html_output()) {
+  meta() |> 
+    meta_google_scholar(
+      title = "Mikroekonomi: Pendahuluan",
+      author = "Tedy Herlambang",
+      publication_date = "2021",
+      isbn = ""
+    ) 
+}
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+layout: true
+  
+<div class="my-footer"><span>bangtedy.github.io</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+---
+name: setup
+class: middle, inverse
+
+# LUARAN PEMBELAJARAN
+
+Setelah mempelajari bab ini, mahasiswa diharapkan dapat:
+
+1. Menjelaskan persoalan kelangkaan sumberdaya relatif terhadap keinginan di dalam ekonomi
+2. Menjelaskan hal-hal yang mempengaruhi sebuah pilihan
+3. Menjelaskan hubungan antara teori ekonomi dan realitas ekonomi
+4. Mengidentifikasi perangkap-perangkap analisis ekonomi
+
+---
+class: inverse, center, middle
+# Persoalan Ekonomi:
+
+Kelangkaan Sumberdaya vs. Ketidakterbatasan Keinginan
+
+# Seseorang harus membuat pilihan
+
+---
+
+# Kenapa harus memilih?
+
+- Motor baru, hape baru, sepatu baru, tambah uang saku, lebih banyak jalan-jalan 
+
+- Seandainya semua keinginan diatas bisa dipenuhi -- > akan selalu muncul keinginan lain -- > karena keinginan terus bertambah
+
+- Tetapi sumberdaya untuk memenuhi keinginan itu *langka/terbatas*
+
+---
+
+# Masalah Memilih dan Ilmu Ekonomi
+
+### Masalah membuat *pilihan* dihadapi oleh semua orang dari berbagai usia dan profesi:
+
+- tua, muda --> pilihan dikedua golongan usia ini apa? 
+- mahasiswa, dosen, petani, wirausahawan, presiden dll.
+
+### Ilmu Ekonomi: mempelajari bagaimana seseorang memenuhi keinginan yang tak terbatas sementara sumberdaya yang dimiliki terbatas.
+---
+
+# Sumberdaya
+
+**Sumberdaya**:input atau faktor produksi yang digunakan untuk menghasilkan barang dan jasa yang diinginkan masyarakat: tenaga kerja, sumberdaya alam, kapital, sumberdaya alam
+
+- **Tenaga kerja**: upaya fisik dan mental yang digunakan untuk menghasilkan barang dan jasa
+
+- **Kapital**: bangunan, peralatan, mesin-mesin dan keterampilan manusia
+
+- **Sumberdaya alam**: semua anugerah alam yang dapat diperbarui maupun tidak
+
+- **Kemampuan kewirausahaan**: pemikiran dan imajinasi yang diperlukan untuk mengembangkan produk atau proses baru, keterampilan yang diperlukan untuk mengorganisai produksi dan keberanian mengambil risiko yang diperhitungkan
+---
+
+# Barang dan Jasa
+
+Sumberdaya diramu dan diracik sedemikian rupa untuk memproduksi barang dan jasa. 
+
+Apa yang dikelola oleh seorang *Young Agripreneur*?
+
+- lahan, air, benih, pupuk dan obat-obatan, sinar matahari, hama, gulma untuk memproduksi komoditas pertanian. 
+- komoditas pertanian --> sesuatu yang kasatmata
+
+Bagaimana dengan jasa transportasi, pembiayaan pertanian, asuransi pertanian?
+
+---
+
+# Pembuat Keputusan Ekonomi dan Pasar
+Empat pembuat keputusan di dalam perekonomian: 
+- rumah tangga, 
+- perusahaan,
+- pemerintah,
+- selain tiga di atas(*the rest of the world*).
+
+*Pasar*: seperangkat pengaturan dimana pembeli dan penjual menyepakati syarat-syarat untuk melakukan pertukaran.
+
+*Pasar Produk*: pasar dimana barang dan jasa diperjualbelikan
+
+*Pasar Input*: pasar dimana input atau faktor produksi diperjualbelikan
+
+*Model Arus-lingkar*: sebuah diagram yang menunjukkan arus aliran sumberdaya, produk, pendapatan dan penerimaan diantara pembuat keputusan ekonomi.
+
+---
+# Seni Analisis Ekonomi
+
+- Nafsi rasional (*rational self-interest*)
+- Pilihan perlu waktu dan informasi (*choice requires time and information*)
+- Analisis ekonomi adalah analisis marjinal (*economic analysis is marginal analysis*)
+
+#### Have you discovered a "marginal" analysis?
+
+---
+class: inverse
+
+## Sains Analisis Ekonomi
+
+- Peran dari teori
+- Metode ilmiah
+- Analisis normatif dan positif
+- Memprediksi perilaku rata-rata
+
+---
+
+## Ilmu Ekonomi sebagai Sains
+
+Ekonom mencoba menganalisis masalah ekonomi dengan objektivitas metode ilmiah. 
+
+Seorang ekonom mengkaji masalah ekonomi seperti seorang sarjana pertanian menganalisis tanaman: 
+- mencari teori yang relevan, membuat hipotesis, mengumpulkan data dan menganalisis data sebagai upaya membuktikan atau menolak teori.
+
+---
+
+## "Jebakan" dalam Analisis Ekonomi
+
+ - Korelasi tidak sama dengan sebab akibat
+ - *The Fallacy of Composition*
+ - *The Mistake of Ignoring the Secondary Effects*
+---
+
+class: inverse, right, middle
+
+
+### Kso'on, find me at...
+
+[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
+[`r fa(name = "blog")` bangtedy.github.io](https://bangtedy.github.io)
+
+
+
+
+

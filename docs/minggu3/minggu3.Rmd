@@ -1,0 +1,168 @@
+---
+title: "Pembuat Keputusan Ekonomi"
+author: "Tedy Herlambang"
+subtitle: "Materi Minggu ke 3"
+institute: ""
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["useR_nolog.css", "uwm-fonts", "extra_css.css"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: solarized-dark
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r, echo = FALSE}
+# google scholar metadata
+library(metathis)
+
+if (knitr::is_html_output()) {
+  meta() |> 
+    meta_google_scholar(
+      title = "Pembuat Keputusan Ekonomi",
+      author = "Tedy Herlambang",
+      publication_date = "2021",
+      isbn = ""
+    ) 
+}
+```
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+layout: true
+
+<div class="my-footer"><span>bangtedy.github.io</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+---
+
+## Luaran Pembelajaran
+Setelah mempelajari materi ini, mahasiswa diharapkan dapat:
+
+
+1. Menjelaskan sumber-sumber utama pendapatan dan pengeluaran *rumah tangga*
+2. Menjelaskan sumber-sumber utama pendapatan dan pengeluaran *perusahaan*
+3. Menjelaskan peran *pemerintah* di dalam perekonomian
+
+---
+
+## Rumah Tangga, Perusahaan dan Pemerintah
+
+- Perekonomian terdiri dari jutaan orang yang terlibat dalam kegitan memproduksi, menyewa, menjual, membeli, dll, yang bisa dikelompokkan menjadi tiga:
+
+  + Rumah tangga: mengkonsumsi dan membeli barang dan jasa yang dihasilkan perusahaan. Rumah tangga sebagai pemilik faktor produksi.
+
+  + Perusahaan: memproduksi barang dan jasa dengan menggunakan faktor produksi (yang dimiliki oleh rumah tangga) tenaga kerja, tanah, bangunan dan mesin-mesin.
+
+  + *Satu lagi siapa?*
+
+- Darimana pendapatan dan pengeluaran rumah tangga dan perusahaan?
+- Perhatikan diagram arus lingkar dipertemuan sebelumnya!
+
+---
+
+## Rumah Tangga
+- Memaksimumkan utilitas: kepuasan yang didapat dari konsumsi
+- Sebagai pemilik/pemasok sumberdaya atau faktor produksi
+- Sebagai pembeli barang/jasa
+
+---
+
+## Perusahaan
+- Spesialisasi dan keunggulan komparatif membuat rumah tangga tidak menghasilkan sendiri semua kebutuhannya 
+  + Kebutuhan dipenuhi dari pasar 
+  + Membeli barang diproduksi oleh perusahaan.
+
+- Perusahaan adalah unit ekonomi yang dibentuk oleh seorang entrepreneur untuk  memperoleh keuntungan 
+  + Seorang entreprenuer mengelola tenaga kerja, kapital dan sumberdaya alam untuk menghasilkan barang dan jasa yang dibutuhkan pasar. 
+
+- Keuntungan = Penerimaan - Pengeluaran
+
+---
+
+## Pemerintah
+
+- Kegiatan produksi perusahaan dan rumah tangga tidak dapat memenuhi semua keinginan masyarakat  
+  + Perlu pelaku ekonomi lain yang menyediakan yaitu *pemerintah*
+
+- Pemerintah berperan penting di setiap negara:
+  + Mengatur dan menegakkan peraturan, undang-undang, *rules of the game*
+  + Mempromosikan persaingan yang sehat
+  + Mengatur monopoli alami
+  + Menyediakan barang publik
+  + Mengatasi eksternalitas
+  + Mengupayakan pemerataan pendapatan
+  + Mengupayakan lapangan pekerjaan, pertumbuhan ekonomi dan menekan inflasi
+
+---
+
+## Kebijakan Pemerintah
+
+**Eksternalitas**: biaya atau manfaat yang tidak mempengaruhi pembeli atau penjual, tetapi mempengaruhi orang lain yang tidak terlibat dalam transaksi pasar.
+
+**Kebijakan fiskal**: penggunaan pengeluaran dan transfer pemerintah, pajak dan pinjaman untuk mempengaruhi variabel ekonomi secara luas seperti tingkat pengangguran, pertumbuhan ekonomi dan inflasi.
+
+**Kebijakan moneter**: Aturan pasokan uang untuk mempengaruhi variabel ekonomi secara luas seperti tingkat pengangguran, pertumbuhan ekonomi dan inflasi.
+
+---
+
+## The Rest of the World
+
+**Nilai Tukar**: ukuran harga mata uang sebuah negara di dalam mata uang negara lain.
+
+**Neraca Perdagangan**: ikhtisar yang menunjukkan selisih nilai transaksi eskpor dan impor suatu negara dalam jangka waktu tertentu.
+
+**Neraca Pembayaran**: catatan sistematis tentang semua transaksi ekonomi antara penduduk suatu negara dengan penduduk negara lain.
+
+**Valuta Asing**: uang asing yang diperlukan untuk melakukan transaksi internasional
+
+---
+class: 
+## Hambatan Perdagangan
+
+- Tarif: pajak impor.
+- Kuota: pembatasan kuantitas produk yang boleh diekspor atau diimpor.
+---
+class: inverse, right, middle
+
+
+### Kso'on, find me at...
+
+[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
+[`r fa(name = "blog")` bangtedy.github.io](https://bangtedy.github.io)

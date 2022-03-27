@@ -1,0 +1,69 @@
+---
+title: "Alat dan Sistem Ekonomi"
+subtitle: "Materi Minggu ke 2"
+author: "Tedy Herlambang"
+institute: ""
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["useR_nolog.css", "uwm-fonts", "extra_css.css"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
+library(fontawesome)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+layout: true
+  
+<div class="my-footer"><span>bangtedy.github.io</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+---
+
+work in progress
+
+---
+class: inverse, right, middle
+
+### Kso'on, find me at...
+
+
+[`r fa(name = "twitter")` @t_hlb](http://twitter.com/t_hlb)  
+[`r fa(name = "blog")` bangtedy.github.io](https://bangtedy.github.io)
+

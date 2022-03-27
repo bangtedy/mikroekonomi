@@ -1,0 +1,135 @@
+---
+title: Tedy Herlambang/mikroekonomi
+output:
+  xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
+  # self_contained: TRUE
+    includes:
+      in_header: conf/style-header.html
+    lib_dir: libs
+    seal: false
+    css: ["default", "conf/css/style.css", "conf/css/fonts.css"]
+    nature:
+      beforeInit: ["conf/js/gifffer.min.js", "conf/js/style-macros.js"]
+      ratio: 16:9
+---
+
+```{r, echo = FALSE}
+# google scholar metadata
+library(metathis)
+
+if (knitr::is_html_output()) {
+  meta() |> 
+    meta_google_scholar(
+      title = "MONOPOLI",
+      author = "Tedy Herlambang",
+      publication_date = "2021",
+      isbn = ""
+    ) 
+}
+```
+
+```{r setup, echo = F}
+knitr::opts_chunk$set(
+  comment = "#",
+  #cache = TRUE,
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 7,
+  fig.height = 5.25,
+  fig.align = 'center',
+  fig.retina = 3
+)
+
+# base plot layout
+mypar = list(mar = c(3,3,0.5,0.5), mgp = c(1.5, 0.3, 0), tck = -.008)
+
+# xaringan Extra
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_panelset()
+xaringanExtra::use_scribble()
+```
+
+class: middle, title-slide
+
+<!-- top logo (comment to remove or edit on `conf/css/style.css:23`) -->
+<div class="lab-logo"></div>
+<!-- <div class="uni-logo"></div> -->
+
+# MONOPOLI
+
+<hr width="55%" align="left" size="1.3" color="orange"></hr>
+
+## Mikroekonomi: Materi Minggu ke 11 
+
+### Tedy Herlambang .small[<br>]
+
+<br><br><br><br><br>
+[<i class="fas fa-blog" style="color:#e7e8e2"></i> bangtedy.github.io](https://bangtedy.github.io)
+
+[<i class="fa fa-twitter fa-lg" style="color:#e7e8e2"></i> @t_hlb](https://twitter.com/t_hlb)
+
+---
+
+# LEARNING OUTCOMES
+
+After studying this chapter, you will be able to
+
+- List three barriers to entry and explain how each can help create market power
+- Distinguish marginal revenue and average revenue for a monopolist, and explain why 
+marginal revenue is less than average revenue
+- Determine the profit-maximizing or loss-minimizing production level for a monopolist
+- Summarize what causes the deadweight loss of monopoly
+- Outline the factors that could cause the deadweight loss of monopoly to be lower or higher than expected
+- Explain why a firm with market power might decide to charge different groups different prices
+ 
+---
+# AN INTRODUCTION TO MONOPOLY
+
+- A monopoly is the sole supplier of a product with no close substitutes. 
+- There is only one supplier in the market but there are many demanders, so 
+many that no buyer has any control over the price. 
+
+---
+# Why do some markets come to be dominated by a single supplier? 
+
+> A monopolized market is characterized by barriers to entry, which are restrictions on the entry of new firms into an industry.
+
+---
+
+# BARRIERS TO ENTRY
+
+- Legal Restrictions
+  - Patents and Invention Incentives
+  - Licenses and Other Entry Restrictions
+- Economies of Scale
+- Control of Essential Resources
+---
+
+class: inverse
+
+.pull-left1[
+<br>
+
+.font70[A single study is never the end of the story; multiple studies are 
+needed before we can reach defensible conclusions about social phenomena.] 
+
+<hr width="100%" align="left" size="0.3" color="orange"></hr>
+
+<br><br><br><br><br><br><br><br>
+
+**Special thanks to**
+
+Mahasiswa Agribisnis Angkatan '21
+]
+
+.pull-right1[
+<br>
+![:scale 71%]()
+]
